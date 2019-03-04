@@ -1,23 +1,31 @@
-package panda.domain.entities;
+package panda.domain.models.view;
 
-import javax.persistence.*;
+import panda.domain.entities.Status;
+import panda.domain.models.service.UserServiceModel;
+
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "packages")
-public class Package extends BaseEntity {
+public class PackageViewModel {
 
+    private String id;
     private String description;
     private Double weight;
     private String shippingAddress;
     private Status status;
     private LocalDateTime estimatedDeliveryTime;
-    private User recipient;
+    private String recipient;
 
-    public Package() {
+    public PackageViewModel() {
     }
 
-    @Column(name = "description", nullable = false)
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -26,7 +34,6 @@ public class Package extends BaseEntity {
         this.description = description;
     }
 
-    @Column(name = "weight", nullable = false)
     public Double getWeight() {
         return weight;
     }
@@ -35,7 +42,6 @@ public class Package extends BaseEntity {
         this.weight = weight;
     }
 
-    @Column(name = "shipping_address", nullable = false)
     public String getShippingAddress() {
         return shippingAddress;
     }
@@ -44,8 +50,6 @@ public class Package extends BaseEntity {
         this.shippingAddress = shippingAddress;
     }
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "status", nullable = false)
     public Status getStatus() {
         return status;
     }
@@ -54,7 +58,6 @@ public class Package extends BaseEntity {
         this.status = status;
     }
 
-    @Column(name = "estimated_delivery_time")
     public LocalDateTime getEstimatedDeliveryTime() {
         return estimatedDeliveryTime;
     }
@@ -63,16 +66,11 @@ public class Package extends BaseEntity {
         this.estimatedDeliveryTime = estimatedDeliveryTime;
     }
 
-    @ManyToOne(targetEntity = User.class)
-    @JoinColumn(
-            name = "recipient_id",
-            referencedColumnName = "id"
-    )
-    public User getRecipient() {
+    public String getRecipient() {
         return recipient;
     }
 
-    public void setRecipient(User recipient) {
+    public void setRecipient(String recipient) {
         this.recipient = recipient;
     }
 }

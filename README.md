@@ -125,4 +125,4 @@ about which users can access specific functionalities and pages.
 <li>Admins (logged in) can access the Admin Package Ship functionality.</li>
 <li>Admins (logged in) can access the Admin Package Deliver functionality.</li>
 </ul>
-
+<p>For more information please see projectinfo.dox</p>

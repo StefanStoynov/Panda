@@ -6,9 +6,9 @@ public interface GenericRepository<E, ID> {
 
     E save(E entity);
 
-    List<E>findAll();
+    List<E> findAll();
 
-    E findById(String id);
+    E findById(ID id);
 
     Long size();
 }
