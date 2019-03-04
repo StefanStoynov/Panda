@@ -8,13 +8,13 @@ rising Start-Up, which lacks a web application. You have been employed by the KF
  to implement a web platform for PANDA. <br>
  
 <h2>Database - 3 entity application</h2>
-<h2>Functional Requirements:</h2><br>
+<h2>Functional Requirements</h2><br>
 The application should provide Guest (not logged in) users with the functionality to:<br>
 <ul>
 <li>Login</li>
 <li>Register</li>
 <li>View the Guest Index page</li>
-</ul><br>
+</ul>
 The application should provide Users (logged in) with the functionality to:<br>
 <ul>
 <li>Logout</li>
@@ -22,7 +22,7 @@ The application should provide Users (logged in) with the functionality to:<br>
 <li>View details about a Package</li>
 <li>View their Receipts</li>
 <li>View details about a Receipt</li>
-</ul><br>
+</ul>
 The application should provide Admins (logged in, with role - Admin) with the functionality to:<br>
 <ul>
 <li>Logout</li>
@@ -37,7 +37,7 @@ The application should provide Admins (logged in, with role - Admin) with the fu
 <li>Ship Packages</li>
 <li>Deliver Packages</li>
 </ul>
-<h2>Users:</h2><br>
+<h2>Users</h2>
 <p>The first registered User should be assigned a role – "Admin". Every User after that, should have a role – "User".<br>
 Users have Packages, which are created and controlled for them, by an Administrator. <br>
 Users can view Details about their own Packages. <br>
@@ -51,7 +51,7 @@ Administrators can also create Packages for a specific User. <br>
 <li>They can also view all Shipped Packages, and they can Deliver them.</li>
 <li>They can also view all Delivered Packages, and they can view Details about them.</li>
 </ul>
-<h2>Packages:</h2>
+<h2>Packages</h2>
 <p>
 When Packages are created, they are created with a Description, a Weight, a Shipping Address and a Recipient User. 
 </p>
@@ -60,7 +60,7 @@ When Packages are created, they are created with a Description, a Weight, a Ship
 <li>Upon creation, the Estimated Delivery Date of a Package should be set to NULL.</li>
 </ul>
 
-<h2>Functionality:</h2>
+<h2>Functionality</h2>
 <h3>Pending Packages</h3>
 <p>
 A Pending Package, can be Shipped by an Administrator, by clicking on the [Ship] button from the Pending <br>
