@@ -3,7 +3,7 @@
 # Panda
 Simple JavaEE project. Description:
 
-<b>PANDA</b> (Package Acceptance and National Delivery Application) is a platform for package deliveries, which is a fast-<br>
+<b>PANDA</b> (<b>P</b>ackage <b>A</b>cceptance and <b>N</b>ational <b>D</b>elivery <b>A</b>pplication) is a platform for package deliveries, which is a fast-<br>
 rising Start-Up, which lacks a web application. You have been employed by the KFC (Kung-Fu-Chicken) Corporation<br>
  to implement a web platform for PANDA. <br>
  
