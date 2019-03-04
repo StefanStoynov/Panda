@@ -1,21 +1,21 @@
-# Panda
-Simple JavaEE project
-<hr>
+![csm_meng_meng_baby_1_0b7fe14b2b](https://user-images.githubusercontent.com/33524282/53733800-d024ea80-3e8a-11e9-8a25-7d27f72c5198.jpg)
 
+# Panda
+Simple JavaEE project. Description:
 
 <b>PANDA</b> (Package Acceptance and National Delivery Application) is a platform for package deliveries, which is a fast-<br>
 rising Start-Up, which lacks a web application. You have been employed by the KFC (Kung-Fu-Chicken) Corporation<br>
  to implement a web platform for PANDA. <br>
  
 <h2>Database - 3 entity application</h2>
-<h2>Functional Requirements:</h2>
-<pre>The application should provide Guest (not logged in) users with the functionality to:</pre><br>
+<h2>Functional Requirements:</h2><br>
+The application should provide Guest (not logged in) users with the functionality to:<br>
 <ul>
 <li>Login</li>
 <li>Register</li>
 <li>View the Guest Index page</li>
 </ul><br>
-<pre>The application should provide Users (logged in) with the functionality to:</pre><br>
+The application should provide Users (logged in) with the functionality to:<br>
 <ul>
 <li>Logout</li>
 <li>View their Packages</li>
@@ -23,7 +23,7 @@ rising Start-Up, which lacks a web application. You have been employed by the KF
 <li>View their Receipts</li>
 <li>View details about a Receipt</li>
 </ul><br>
-<pre>The application should provide Admins (logged in, with role - Admin) with the functionality to:</pre><br>
+The application should provide Admins (logged in, with role - Admin) with the functionality to:<br>
 <ul>
 <li>Logout</li>
 <li>View their Packages</li>
@@ -36,8 +36,8 @@ rising Start-Up, which lacks a web application. You have been employed by the KF
 <li>View details about all Delivered Packages</li>
 <li>Ship Packages</li>
 <li>Deliver Packages</li>
-</ul><br>
-<h2>Users</h2><br>
+</ul>
+<h2>Users:</h2><br>
 <p>The first registered User should be assigned a role – "Admin". Every User after that, should have a role – "User".<br>
 Users have Packages, which are created and controlled for them, by an Administrator. <br>
 Users can view Details about their own Packages. <br>
@@ -50,17 +50,17 @@ Administrators can also create Packages for a specific User. <br>
 <li>They can also view all Pending Packages, and they can Ship them.</li>
 <li>They can also view all Shipped Packages, and they can Deliver them.</li>
 <li>They can also view all Delivered Packages, and they can view Details about them.</li>
-</ul><br>
-<h2>Packages</h2><br>
+</ul>
+<h2>Packages:</h2>
 <p>
 When Packages are created, they are created with a Description, a Weight, a Shipping Address and a Recipient User. 
 </p>
 <ul>
 <li>Upon creation, the Status of a Package should be set to Pending.</li>
 <li>Upon creation, the Estimated Delivery Date of a Package should be set to NULL.</li>
-</ul><br>
+</ul>
 
-<h2>Functionality</h2><br>
+<h2>Functionality:</h2>
 <h3>Pending Packages</h3>
 <p>
 A Pending Package, can be Shipped by an Administrator, by clicking on the [Ship] button from the Pending <br>
@@ -71,7 +71,7 @@ Packages Page. At that moment the Package Status becomes "Shipped" and the Estim
 <li>All Pending Packages are presented on the Pending Packages Page.</li>
 <li>A User can view his Pending Packages on his Index Page in the Pending rectangular block.</li>
 <li>A User can view details about each one of his Pending Packages from his Index Page, by clicking on the [Details] button.</li>
-</ul><br>
+</ul>
 <h3>Shipped Packages</h3>
 <p>
 A Shipped Package, can be Delivered by an Administrator, by clicking on the [Deliver] button from the<br>
@@ -81,7 +81,7 @@ A Shipped Package, can be Delivered by an Administrator, by clicking on the [Del
 <li>All Shipped Packages are presented on the Shipped Packages Page.</li>
 <li>A User can view his Shipped Packages on his Index Page in the Shipped rectangular block.</li>
 <li>A User can view details about each one of his Shipped Packages from his Index Page, by clicking on the [Details] button.</li>
-</ul><br>
+</ul>
 
 <h3>Delivered Packages</h3>
 <p>
@@ -93,7 +93,7 @@ is generated to the User for that Package.
 <li>All Delivered Packages are presented on the Delivered Packages Page.</li>
 <li>A User can view his Delivered Packages on his Index Page in the Delivered rectangular block.</li>
 <li>A User can Acquire each one of his Delivered Packages from his Index Page, by clicking on the [Acquire] button.</li>
-</ul><br>
+</ul>
 
 <h2>Receipts</h2>
 <p>Receipts are just data entities. They are created when a Package is Acquired by its Recipient User. <br>
